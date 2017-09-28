@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>GGGG</title>
+    <script>
+        function uyarr() {
+            alert("Alart GG WP");
+        }
+        window.onload = function () {
+            document.getElementById("ekle").onclick = function myfunction() {
+                var gg = document.getElementById("isim");
+                var p = gg.value.toUpperCase() + "<br>";
+                document.getElementById("list").innerHTML += p;
+               // document.getElementById("isim").value.anchor("GGG")
+                //  document.getElementById("isim").onfocus();
+              
+                gg.value = null;
+                gg.focus();
+               
+            }
+        }
+       
+
+        
+   
+       
+
+    </script>
+    <style>
+        #list{
+            width:100px;
+            height:150px;
+            border:dotted;
+            background-color:cadetblue;
+        }
+    </style>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <input type="button"  value="GGWP" onclick="uyarr()" />
+    <br />
+    <br />
+    Adı : <input type="text"  value="Değer Giriniz" id="isim" />
+    <input type="button"  value="Add" id="ekle" />
+    <br />
+    <br />
+    <div id="list"></div>
+</body>
+</html>
+
